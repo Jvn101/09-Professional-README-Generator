@@ -4,12 +4,12 @@
 ## Table of Contents:
 *[Description](#description)
 -[Licence](#licence)
-*[Installation](#Installation)
-*[Usage](#Usage)
-*[Website Link](#Website-Link)
-*[How to Contribute](#How-to-Contribute)
-*[Tests](#Tests)
-*[Questions](#Questions)
+*[Installation](#installation)
+*[Usage](#usage)
+*[Website Link](#website-link)
+*[How to Contribute](#how-to-contribute)
+*[Tests](#tests)
+*[Questions](#questions)
 
 ## Description
 cool project
