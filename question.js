@@ -25,6 +25,11 @@ const questions = [
         name: 'Wesbite',
       },
       {
+        type: 'input',
+        message: 'Writes tests for your application and provide examples on how to run them',
+        name: 'Tests',
+      },
+      {
         type: 'list',
         name: 'license',
         message: 'Please select what license will be used',

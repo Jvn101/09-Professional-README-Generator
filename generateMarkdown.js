@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== 'none')  {
-    return //https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR>
+    return `![badge](https://img.shields.io/badge/license-${license}-blue)`
   } else {
     return ""
   }
@@ -11,7 +11,6 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  console.log("LICENSE INSIDE LINK>>>>>",license)
   if (license === 'none')  {
     return ""
   } else {
@@ -25,8 +24,8 @@ function renderLicenseSection(license) {
   if (license === 'none') {
     return ""
     } else {
-      return `# License
-      This project is protected under the ${license} license
+      return `## License
+  This project is protected under the ${license} license
       `;
     }
 }
@@ -38,10 +37,14 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(data.license)}
 
 ## Table of Contents:
--[Description](#description)
+*[Description](#description)
 ${renderLicenseLink(data.license)}
--[Description](#description)
--[Website Link](#Website Link)
+*[Installation](#Installation)
+*[Usage](#Usage)
+*[Website Link](#Website-Link)
+*[How to Contribute](#How-to-Contribute)
+*[Tests](#Tests)
+*[Questions](#Questions)
 
 ## Description
 ${data.Description}
