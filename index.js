@@ -1,31 +1,25 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./generateMarkdown');
 
-// TODO: Create an array of questions for user input
-const questions =require('./question')
+// Array of questions for user input
+const questions =require('./question');
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+// Function to write README file
+function writeToFile(data) {
     //fs.writeFile()
-    //fs.writeFile("./fun.md", generateMarkdown(mock), err=>console.log(err))
+    fs.writeFile("./Project-Readme.md", 
+    generateMarkdown(data), (err) => err && console.log(err + " Error!"));
 }
 
-// TODO: Create a function to initialize app
+// Function to initialize app
 function init() {
     inquirer.prompt(questions)
     .then(data => {
-      console.log(data)
-        //return readme;
+      writeToFile(data)
     })
 }
 
 // Function call to initialize app
-//init()
-
-
-const mock = {title:"test", license:"mit", Description:"cool project",Contents:"stuff goes here", Installation: "npm i", Usage: "please use"}
-
-
-fs.writeFile("./fun.md", generateMarkdown(mock), err=>console.log(err))
+init()
