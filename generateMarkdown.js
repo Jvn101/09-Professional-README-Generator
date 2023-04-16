@@ -70,7 +70,7 @@ ${data.Tests}
 ## Questions
 Please contact me for questions using the following links:
 ${data.Email}
-https://github.com/${data.Username}
+[Git Hub](https://github.com/${data.Username})
 `;
 }
 
