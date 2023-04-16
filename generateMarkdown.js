@@ -65,10 +65,10 @@ ${renderLicenseSection(data.license)}
 ${data.Contributing}
 
 ## Tests
-Tests for the project:
+${data.Tests}
 
 ## Questions
-Please contact me for questions using the following links
+Please contact me for questions using the following links:
 ${data.Email}
 https://github.com/${data.Username}
 `;
