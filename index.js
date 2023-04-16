@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./generateMarkdown');
 
-// Array of questions for user input
+// Array of questions for user input. Questions.js is stored in a seperate file. Open 'questions.js' to view the users prompts asked
 const questions =require('./question');
 
 // Function to write README file
