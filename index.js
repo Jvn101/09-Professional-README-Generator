@@ -1,4 +1,4 @@
-// Packages needed for this application
+// Packages needed for this application to run
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./generateMarkdown');
