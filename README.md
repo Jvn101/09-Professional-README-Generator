@@ -26,7 +26,7 @@ After completing the installation steps open the integrated terminal and type 'n
 
 ## Video walkthrough
 
-For this project we have created a video walkthrough demonstrating how this project can be used. Click [here](https://drive.google.com/file/d/1Ia7_h0DclvkjvPk7vZ3u4MdbtDX8nA9M/view) to view.
+For this project we have created a video walkthrough demonstrating how this project can be used. Click [here](https://drive.google.com/file/d/1LR42swvNdGysPvzgwfGGm1yI6qTiCrCy/view) to view.
 
 ***
 ### Contact us
