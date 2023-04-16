@@ -22,7 +22,7 @@ const questions = [
   {
     type: "input",
     message: "Please enter the link to the deployed Github Pages",
-    name: "Wesbite",
+    name: "Website",
   },
   {
     type: "input",
@@ -32,8 +32,8 @@ const questions = [
   },
   {
     type: "list",
-    name: "license",
-    message: "Please select what license will be used",
+    name: "licence",
+    message: "Please select what licence will be used",
     choices: ["agpl", "apache", "mit", "none"],
   },
   {
