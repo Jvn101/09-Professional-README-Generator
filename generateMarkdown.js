@@ -1,31 +1,32 @@
-// Function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  if (license !== "none") {
-    return `![badge](https://img.shields.io/badge/license-${license}-blue)`;
-  } else {
+// Function that returns a licence badge based on which licence is passed in
+// If there is no licence, return an empty string
+function renderLicenceBadge(licence) {
+  if (licence === "none") {
     return "";
+  } else {
+    return `![badge](https://img.shields.io/badge/license-${licence}-blue)`;
+    ;
   }
 }
 
-// Function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {
-  if (license === "none") {
+// Function that returns the licence link
+// If there is no licence, return an empty string
+function renderLicenceLink(licence) {
+  if (licence === "none") {
     return "";
   } else {
     return "-[Licence](#licence)";
   }
 }
 
-// Function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-  if (license === "none") {
+// Function that returns the licence section of README
+// If there is no licence, return an empty string
+function renderLicenceSection(licence) {
+  if (licence === "none") {
     return "";
   } else {
-    return `## License
-  This project is protected under the ${license} license
+    return `## Licence
+  This project is protected under the ${licence} licence
       `;
   }
 }
@@ -34,11 +35,11 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   console.log(data);
   return `# ${data.title}
-  ${renderLicenseBadge(data.license)}
+  ${renderLicenceBadge(data.licence)}
 
 ## Table of Contents:
 -[Description](#description)
-${renderLicenseLink(data.license)}
+${renderLicenceLink(data.licence)}
 -[Installation](#installation)
 -[Usage](#usage)
 -[Website Link](#website-link)
@@ -48,7 +49,6 @@ ${renderLicenseLink(data.license)}
 
 ## Description
 ${data.Description}
-${data.Contents}
 
 ## Installation  
 ${data.Installation}
@@ -57,9 +57,9 @@ ${data.Installation}
 ${data.Usage}
 
 ## Website Link
-Link to the deployed site: [Deployed Site](${data.WebsiteLink})
+Link to the deployed site: [Deployed Site](${data.Website})
 
-${renderLicenseSection(data.license)}
+${renderLicenceSection(data.licence)}
 
 ## How to Contribute
 ${data.Contributing}
